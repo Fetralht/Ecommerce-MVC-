@@ -1,0 +1,31 @@
+body{
+    padding:0;
+    margin: 0%;
+}
+.header{
+   padding: 0 1rem;
+   width: 100%;
+   background-color: rgb(176, 229, 19);
+}
+.nav{
+    display: flex;
+    align-items: center;
+
+
+}
+.ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+
+}
+
+a{
+    color: azure;
+    text-decoration: none;
+}
+ .li a:hover,
+ .li a:active,
+ .li a.active{
+        color: blue;
+    }
