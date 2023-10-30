@@ -2,10 +2,9 @@ const express=require('express')
 const path=require('path')
 const router=express.Router()
 const adminData=require('./admin')
+const controllers=require('../controllers/product')
 
-router.get('/',(req,res,next)=>{
-    const product=adminData.product
-    res.render('shop',{prods:product,docTitle:'Shop'})
- })
+
+router.get('/',controllers.getShop)
 
  module.exports=router

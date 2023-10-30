@@ -1,0 +1,32 @@
+.main{
+    margin-top: 50px;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(212, 218, 223);
+    border-radius: 23px;
+    margin-left: 300px;
+    
+}
+
+.header1{
+    align-content: center;
+    display: flex;
+    color: rgb(144, 0, 255);
+
+}
+.div{
+    width:300px;
+    height: 400px;
+    display: flex;
+}
+.h2{
+    color: blue;
+
+
+}
+.p{
+    color:rgba(13, 6, 9, 0.952);
+}
+.header1,.h2,.p{
+    padding-left: 100px;
+}
