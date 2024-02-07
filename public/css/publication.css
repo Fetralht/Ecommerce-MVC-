@@ -1,7 +1,8 @@
 .main{
     margin-top: 50px;
+    display: inline-block;
     width: 300px;
-    height: 400px;
+    height: 500px;
     background-color: rgb(212, 218, 223);
     border-radius: 23px;
     margin-left: 300px;
@@ -10,7 +11,7 @@
 
 .header1{
     align-content: center;
-    display: flex;
+    
     color: rgb(144, 0, 255);
 
 }
@@ -29,4 +30,13 @@
 }
 .header1,.h2,.p{
     padding-left: 100px;
+}
+.article a{
+    color: #000;
+    
+    padding-left: 100px;
+    border-radius: 30px;
+}
+.article a:hover{
+    color: rgb(247, 27, 144);
 }

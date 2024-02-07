@@ -7,6 +7,9 @@ body{
    width: 100%;
    background-color: rgb(176, 229, 19);
 }
+.center{
+    text-align: center;
+}
 .nav{
     display: flex;
     align-items: center;
