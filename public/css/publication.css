@@ -1,42 +1,105 @@
-.main{
-    margin-top: 50px;
-    display: inline-block;
-    width: 300px;
-    height: 500px;
-    background-color: rgb(212, 218, 223);
-    border-radius: 23px;
-    margin-left: 300px;
-    
+body{
+    margin: 0;
 }
-
-.header1{
-    align-content: center;
-    
-    color: rgb(144, 0, 255);
-
+.card {
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    max-width: 600px;
 }
-.div{
-    width:300px;
-    height: 400px;
+.card:hover {
+    transform: scale(1.02);
+}
+.btn-danger {
+    transition: background-color 0.3s ease-in-out;
+}
+.btn-danger:hover {
+    background-color: #dc3545;
+    opacity: 0.8;
+}
+h3, h4 {
+    color: #343a40;
+}
+a {
+    color: #007bff;
+}
+a:hover {
+    text-decoration: underline;
+}
+.container{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
-.h2{
-    color: blue;
-
-
-}
-.p{
-    color:rgba(13, 6, 9, 0.952);
-}
-.header1,.h2,.p{
-    padding-left: 100px;
-}
-.article a{
-    color: #000;
+.header {
+    width: 100%;
+    position: relative;
     
-    padding-left: 100px;
-    border-radius: 30px;
+    background-color: #343a40;
+    padding: 10px 0;
+    margin-bottom: 20px;
 }
-.article a:hover{
-    color: rgb(247, 27, 144);
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+.li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.li a.active {
+    color: #007bff;
+}
+.article {
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    gap: 20px;
+    padding: 20px;
+}
+.container2{
+    background-color: #051524;
+    display: flex; 
+    gap: 20px;
+}
+.header1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #007bff;
+}
+.div1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+img:hover {
+    transform: scale(1.05);
+}
+.p {
+    font-size: 1rem;
+    color: #6c757d;
+    line-height: 1.6;
+    text-align: center;
+    padding: 10px;
+}
+.mt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -13,22 +13,19 @@ exports.getShop=(req,res,next)=>{
         docTitle:'Shop',
         path:'/'})
    })
-    
- }
+}
 exports.getCart=(req,res,next)=>{
    res.render('shop/cart',{
        docTitle:'add cart',
        path:'/cart'})
-      }
-exports.postCart=(req,res,next)=>{
-    
-    const prodId=req.body.productId
-    //(productions.findbyId(prodId))
-   
-   cartProduct.addProduct(prodId,(productions.findbyId(prodId)))
-    res.redirect('/')
-
 }
+// exports.postCart=(req,res,next)=>{
+//     const prodId=req.body.productId
+//     //(productions.findbyId(prodId))
+//     cartProduct.addProduct(prodId,(productions.findbyId(prodId)))
+//     res.redirect('/')
+
+// }
 exports.getChekout=(req,res,next)=>{
   res.render('shop/chekout',{
   docTitle:'chekout',
@@ -39,7 +36,7 @@ exports.getDetails=(req,res,next)=>{
     console.log(prodId)
     productions.findbyId(prodId)
     res.render('shop/product-detail',{docTitle:product.title,path:'/products'})
-    }
+}
 exports.getIndex=(req,res,next)=>{
     productions.fetchAll(products=>{
         res.render('shop/index',{
@@ -47,5 +44,7 @@ exports.getIndex=(req,res,next)=>{
             docTitle:'products',
             path:'/products'})
        })
-    }
+}
+
+
                            

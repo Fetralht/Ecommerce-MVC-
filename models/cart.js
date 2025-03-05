@@ -3,7 +3,7 @@ const path = require('path');
 const products=require('./product.js')
 
 const p = path.join(
-    path.dirname(process.mainModule.filename),
+    path.dirname(require.main.filename),
     'data',
     'cart.json'
 );
@@ -50,13 +50,6 @@ module.exports = class Cart {
        
 
         })
-            
-            
-                // Analyser le panier => recherche d'un produit existant dans le panier
-            
-            
-
-                // Ajout de nouveaux produits, augmentation de la quantité
             
 
             /*if (existingProduct) {
